@@ -1,19 +1,9 @@
 {
-  "name": "lots-o-lists",
+  "name": "server",
   "version": "1.0.0",
   "description": "List and notes manager",
   "main": "index.js",
-  "scripts": {
-    "development": "nodemon ./server/bin/www",
-    "production": "eval $(cat .env.production) node ./server/bin/www",
-    "bundle": "webpack -p --config webpack.config.js",
-    "deploy": "git checkout master && git merge develop && git push -u origin master && git checkout develop",
-    "tests": "NODE_PATH=. eval $(cat .env.test) mocha --compilers js:babel-register --require babel-polyfill --recursive -R min",
-    "tests-client": "npm run tests -- './test/client'",
-    "tests-server": "npm run tests -- './test/server'",
-    "postinstall": "npm run bundle",
-    "start": "npm run development"
-  },
+  "scripts": {},
   "author": "Sean O'Donnell",
   "license": "ISC",
   "dependencies": {
